@@ -510,7 +510,7 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.list-company{
+.section-five__title{
     margin: 0;
     font-weight: bold;
     font-size: 36px;
@@ -519,17 +519,17 @@ img {
     letter-spacing: 0.03em;
     color: var(--title-text-color); 
 }
-.list-company{
+.section-five__title{
     margin-bottom: 50px;
 }
-.six-companies{
+.company-list{
     display: flex;
     justify-content: space-around;
 }
-.six-logo-companies{
+.company-list__svg{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company-icons{
+.company-list__icon{
     display: block;
     width: 170px;
     height: 92px;
@@ -539,13 +539,13 @@ img {
     fill: var(--four-icons-color);
     transition: border 250ms var(--transition); 
 }
-.company-icons:focus,
-.company-icons:hover{
+.company-list__icon:focus,
+.company-list__icon:hover{
     border-color: var(--accent-color);
 }
 
-.company-icons:focus,
-.company-icons:hover{
+.company-list__icon:focus,
+.company-list__icon:hover{
     color: var(--accent-color); 
     fill: var(--accent-color);
 }  
@@ -553,25 +553,26 @@ img {
 
 
 /* FOOTER_SECTION */
-.contacts-down {
+.address__list {
     display: inline-block;
 }
-.contacts-down li:not(:last-child){
+.address__item:not(:last-child){
     margin-bottom: 9px;
 }
-.contacts-down .list {
+.address__link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-line {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--footer-color-line);
 }
-.list:hover,
-.list:focus {
+.address__link:hover,
+.address__link:focus {
     color: var(--accent-color);
 }
 .address {
@@ -580,7 +581,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--header-color);
 }
-.address-one{
+.address__street{
     display: flex;
 }
 .section-join{
@@ -618,7 +619,7 @@ img {
 .icon-footer-line-two:hover{
     background: var(--accent-color);
 }
-.footer-line .container{
+.footer .container{
     display: flex;
     align-items: baseline;
 }
