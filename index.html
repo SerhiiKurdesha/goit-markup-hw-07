@@ -403,14 +403,13 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="close" data-modal-close>
-                <svg width="11" height="11" class="btn-close">
+            <button type="button" class="modal__button" data-modal-close>
+                <svg width="11" height="11" class="modal__close">
                     <use href="./images/close/sprite1.svg#icon-close"></use>
                 </svg>
             </button>
-            <form action="#" class="modal-window">
-                <p class="modal-text">Оставте свои данные, мы вам перезвоним</p>
-
+            <p class="modal-title">Оставте свои данные, мы вам перезвоним</p>
+            <form action="#" class="form">    
                 <label class="modal-border">Имя</label>
                 <span class="modal-side">
                     <input type="text" name="user-name" class="modal-border-title" required />
