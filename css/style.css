@@ -336,7 +336,31 @@ img {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
-/* SECTION_PORTFOLIO */
+/* SECTION_PORTFOLIO_1 */
+
+/* SECTION_PORTFOLIO_2 */
+.button-list {
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 6px 22px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    height: 38px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    transition: background 250ms var(--transition), color 250ms var(--transition), box-shadow 250ms var(--transition);   
+} 
+.button-list:hover,
+.button-list:focus {
+    background: var(--accent-color);
+    color: var(--header-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/* SECTION_PORTFOLIO_2 */
 
 /* SECTION_ONE */
 .section-one {  
@@ -389,31 +413,6 @@ img {
     color: var(--title-text-color);
 }
 /* SECTION_ONE */
-
-/* SECTION_PORTFOLIO_2 */
-.button-list {
-    border: 1px solid transparent;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    padding: 6px 22px;
-    cursor: pointer;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    height: 38px;
-    top: 174px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    transition: background 250ms var(--transition), color 250ms var(--transition), box-shadow 250ms var(--transition);   
-} 
-.button-list:hover,
-.button-list:focus {
-    background: var(--accent-color);
-    color: var(--header-color);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-/* SECTION_PORTFOLIO */
-
 
 /* SPECIAL_CONTENT */
 .visually-hidden {
@@ -584,27 +583,27 @@ img {
 .address__street{
     display: flex;
 }
-.section-join{
+.contacts-icons{
     margin-left: 70px;
 } 
-.join{
-    margin-top: 10px;
+.contacts-icons__title{
     font-style: normal;
     font-weight: bold;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--header-color);
 }
-.icon-footer-line{
+.contacts-icons__list{
     display: flex;
     margin-top: 20px;
     justify-content: space-around;
 }
-.icon-footer-line li:not(:last-child){
+.contacts-icons__item:not(:last-child){
     margin-right: 10px;
 }
-.icon-footer-line-two{
+.contacts-icons__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -615,18 +614,27 @@ img {
     background: rgba(255, 255, 255, 0.1);
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-footer-line-two:focus,
-.icon-footer-line-two:hover{
+.contacts-icons__link:focus,
+.contacts-icons__link:hover{
     background: var(--accent-color);
 }
 .footer .container{
     display: flex;
     align-items: baseline;
 }
-.footer-input{
+.footer-form{
     margin-left: 93px;
 }
-.join-input{
+.footer-form__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-color);
+}
+.footer-form__input{
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -637,11 +645,11 @@ img {
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.join-input:hover,
-.join-input:focus{
+.footer-form__input:hover,
+.footer-form__input:focus{
     border-color: var(--accent-color);
 }
-.join-button{
+.footer-form__button{
   display: inline-block;
   align-items: center;
   position: relative;
@@ -660,15 +668,15 @@ img {
   cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.join-icon{
+.footer-form__icon{
    position: absolute;
    bottom: 13px;
    right: 28px;
    padding-left: 0; 
    
 }
-.join-button:hover,
-.join-button:focus{
+.footer-form__button:hover,
+.footer-form__button:focus{
     background: var(--pink-color);
     color: var(--title-text-color);
     fill: var(--title-text-color);
