@@ -1,0 +1,33 @@
+.section-three{
+   padding-top: 94px;
+   padding-bottom: 94px; 
+}
+.section-three__image{
+     
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.section-three__item{
+    margin: 0;
+    display: flex;
+    padding-left: inherit;
+}
+.section-three__image{
+    position: relative;
+}
+.section-three__text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $header-color;
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: $grey-color;
+}
