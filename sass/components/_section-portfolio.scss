@@ -1,0 +1,74 @@
+.section-portfolio{
+    background: $header-color;
+    padding-top: 94px;
+}
+.btn-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btn-list__item{
+
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+}
+.container{
+
+    .card-set{
+        padding-bottom: 94px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.card-set__link{
+    display: block;
+}
+.card-set__link{
+
+    &:hover,
+    &:focus{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.card-set{
+
+    .project{
+        padding: 20px 24px 20px 24px;
+        border: 1px solid $cards-color;
+        border-block-start: none;
+    }
+}
+.card-set__item{
+    width: 370px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.card-set__item{
+
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+    &:nth-child(n + 7){
+        margin-bottom: 0;
+    }
+}
+.project__depiction{
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+}
+.project__value{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}

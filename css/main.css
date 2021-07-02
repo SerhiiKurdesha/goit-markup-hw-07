@@ -323,6 +323,16 @@ img {
   background: #2f303acc;
 }
 
+.section-three__title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .section-four {
   background: #F5F4FA;
   padding: 94px 0 94px 0;
@@ -342,7 +352,7 @@ img {
   text-align: center;
   border-radius: 0 0 4px 4px;
   background: #ffffff;
-  box-shadow: 0 1px 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list {
@@ -590,5 +600,291 @@ img {
   background: #F5F4FA;
   color: #212121;
   fill: #212121;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay__active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2196f3e6;
+  opacity: 1;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay__text {
+  transform: translate(-50% -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.card-set__link:hover .overlay__active {
+  transform: translateX(0);
+}
+
+.card-set__link:focus .overlay__active {
+  transform: translateX(0);
+}
+
+.section-portfolio {
+  background: #ffffff;
+  padding-top: 94px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.container .card-set {
+  padding-bottom: 94px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.card-set__link {
+  display: block;
+}
+
+.card-set__link:hover, .card-set__link:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-set .project {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-block-start: none;
+}
+
+.card-set__item {
+  width: 370px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.card-set__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card-set__item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.project__depiction {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.project__value {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.buttons {
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  padding: 6px 22px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  color: #212121;
+  height: 38px;
+  top: 174px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttons:hover, .buttons:focus {
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.form__border {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form__inside {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.form__inside:focus, .form__inside:hover {
+  border-color: #2196f3;
+}
+
+.form__inside:focus + .form__icon,
+.form__inside:hover + .form__icon {
+  fill: #2196f3;
+}
+
+.form__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  margin-left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__side {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__textarea:hover {
+  border-color: #2196f3;
+}
+
+.form__checkbox {
+  appearance: none;
+}
+
+.form__option {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.form__agree {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__agree:hover, .form__agree:focus {
+  border-color: #2196f3;
+}
+
+.form__accept {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.form__contract {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.form__checkbox:checked + .form__agree {
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url("../images/new-post/bord-white.svg");
+  background-size: contain;
+  background-origin: border-box;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__checkbox:focus + .form__agree {
+  border-color: #2196f3;
+}
+
+.form__btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: transparent;
+  background: #2196f3;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__btn:hover, .form__btn:focus {
+  background: #188CE8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */
