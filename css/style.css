@@ -16,7 +16,8 @@
 --silver-color: rgba(255, 255, 255, 0.1);
 --light-silver-color: rgba(255, 255, 255, 0.3);
 --blue-color: #2196f3e6;
---black-light-color: rgba(33, 33, 33, 0.2);  
+--black-light-color: rgba(33, 33, 33, 0.2);
+--milk-color: #ececec;  
 }   */
 /* * {
     margin: 0; 
@@ -77,12 +78,12 @@ img {
     background: var(--header-color);
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;  
+    border-bottom: 1px solid #ececec;  
 }
 .page-header .container{
     display: flex;
     align-items: center;
-} */
+}   */
 /* .container {
     width: 1200px;
     padding: 0 15px;
@@ -125,7 +126,7 @@ img {
 .contacts-up__icon:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
-}  */
+}   */
 /* .site-nav__link:active {
     color: var(--accent-color);
 } */
@@ -154,7 +155,7 @@ img {
 }  */
 /* .site-nav__link.current{
     position: relative;    
-} */
+}  */
 /* .site-nav__link.current::after{
     content: '';
     
