@@ -1,4 +1,4 @@
-.form__border{
+.form__contact{
     display: flex;
     flex-direction: column;
     margin-bottom: 4px;
@@ -9,7 +9,7 @@
     letter-spacing: 0.01em;
     color: $primary-text-color;
 }
-.form__inside{
+.form__input{
     width: 100%;
     height: 40px;
     border: 1px solid $black-light-color;
@@ -19,7 +19,7 @@
     transition: border 250ms $transition;
     cursor: pointer;
 }
-.form__inside{
+.form__input{
     
 
     &:focus,
