@@ -80,7 +80,7 @@ img {
   margin: 0 auto;
 }
 
-.container-page {
+.page-header__container {
   display: flex;
 }
 
@@ -93,13 +93,13 @@ img {
   color: #212121;
 }
 
-.site-nav {
+.nav__list {
   display: flex;
   margin: 0;
   margin-left: 93px;
 }
 
-.site-nav__item:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 50px;
 }
 

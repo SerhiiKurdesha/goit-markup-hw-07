@@ -16,7 +16,7 @@
     padding: 0 15px;
     margin: 0 auto;
 }
-.container-page{
+.page-header__container{
     display: flex;
 }
 .site-nav__link{
@@ -27,12 +27,12 @@
   letter-spacing: 0.02em;
   color: $title-text-color;
 }
-.site-nav{
+.nav__list{
   display: flex;
   margin: 0;
   margin-left: 93px;
 }
-.site-nav__item{
+.nav__item{
 
     &:not(:first-child){
         margin-left: 50px;
