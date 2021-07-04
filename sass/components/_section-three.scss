@@ -1,22 +1,22 @@
-.section-three{
+.service{
    padding-top: 94px;
    padding-bottom: 94px; 
 }
-.section-three__image{
+.service__item{
      
     &:not(:last-child){
         margin-right: 30px;
     }
 }
-.section-three__item{
+.service__list{
     margin: 0;
     display: flex;
     padding-left: inherit;
 }
-.section-three__image{
+.service__item{
     position: relative;
 }
-.section-three__text{
+.service__text{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     background: $grey-color;
 }
-.section-three__title{
+.service__title{
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;

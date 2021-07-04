@@ -1,17 +1,17 @@
-.section-two{
+.features{
     padding-top: 94px;
 }
-.section-two__list{
+.features__list{
     margin: 0;
     display: flex;
 }
-.section-two__icons{
+.features__item{
 
     &:not(:last-child){
         margin-right: 30px;
     }
 }
-.section-two__title{
+.features__title{
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -20,7 +20,7 @@
     color: $title-text-color;
     margin: 0;
 }
-.section-two__description{
+.features__description{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -28,7 +28,7 @@
     padding-top: 10px;
     margin: 0;
 }
-.section-two__icons{
+.features__item{
 
     &::before{
         // background: $pink-color;
@@ -40,7 +40,7 @@
         outline: 1px solid transparent;
     }
 }
-.section-two__icons{
+.features__item{
 
     &:nth-child(1){
 
@@ -51,7 +51,7 @@
         }
     }
 }
-.section-two__icons{
+.features__item{
 
     &:nth-child(2){
 
