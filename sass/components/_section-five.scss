@@ -1,8 +1,8 @@
-.section-five{
+.companies{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section-five__title{
+.companies__title{
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
@@ -11,14 +11,14 @@
     letter-spacing: 0.03em;
     color: $title-text-color;
 }
-.company-list{
+.companies__list{
     display: flex;
     justify-content: space-around;
 }
-.company-list__svg{
+.companies__svg{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company-list__icon{
+.companies__icon{
     display: block;
     width: 170px;
     height: 92px;
@@ -28,7 +28,7 @@
     fill: $four-icons-color;
     transition: border 250ms $transition;
 }
-.company-list__icon{
+.companies__icon{
 
     &:focus,
     &:hover{
