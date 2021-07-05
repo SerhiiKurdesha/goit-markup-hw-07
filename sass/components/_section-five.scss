@@ -18,7 +18,7 @@
 .companies__svg{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.companies__icon{
+.companies__link{
     display: block;
     width: 170px;
     height: 92px;
@@ -28,7 +28,7 @@
     fill: $four-icons-color;
     transition: border 250ms $transition;
 }
-.companies__icon{
+.companies__link{
 
     &:focus,
     &:hover{
